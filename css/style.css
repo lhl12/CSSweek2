@@ -1,14 +1,21 @@
 body {
 	font-family: Cochin, Garamond, "Times New Roman", serif;
 	font-size: 150%;
+	background-color: #BBD1EA;
 }
 
 header {
-	background-color: #A1C6EA
+	background-color: #A1C6EA;
+	font-size: 90%
+}
+
+header > * {
+  vertical-align: middle;
 }
 
 nav {
-	background-color: #BBD1EA;
+	display: inline-block;
+	width: 80%;
 }
 
 main {
@@ -17,7 +24,7 @@ main {
 }
 
 footer {
-	background-color: #BBD1EA;
+	background-color: #A1C6EA;
 }
 
 li {
@@ -29,8 +36,34 @@ h1 {
 	text-align: center;
 	font-family: "Lucida Sans", Calibri, Arial, sans-serif;
 	color: #1F363D;
+	line-height: 200%;
 }
 
 p {
 	line-height: 150%;
+}
+
+nav + img {
+  display: inline-block;
+  width: 10%;
+  position: relative;
+  top: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
 }
